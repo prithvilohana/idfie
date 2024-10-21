@@ -51,11 +51,12 @@ public class HelloController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        System.out.println("generateID() method called");
+        System.out.println("Hello World!");
         if (root == null) {
             System.out.println("FXML file not found!");
         } else {
             System.out.println("FXML file loaded successfully");
+
         }
     }
 
