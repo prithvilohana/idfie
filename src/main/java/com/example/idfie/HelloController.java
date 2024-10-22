@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
+import javafx.scene.image.ImageView;
 
 import javafx.scene.image.ImageView;
 class User{
@@ -52,7 +53,8 @@ public class HelloController {
     @FXML
     private Label noFIle;
 
-
+    @FXML
+    public ImageView profimageSc2;
 
     @FXML
     public Button generateBtn;
@@ -68,8 +70,10 @@ public class HelloController {
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("JPEG image", "*.jpg"), new FileChooser.ExtensionFilter("PNG image", "*.png"));
         File selectedFile = fileChooser.showOpenDialog(new Stage());
         if(selectedFile != null){
-            Image image = new Image(selectedFile.getPath());
+            Image image = new Image(selectedFile.toURI().toString());
             userPicture.setImage(image);
+            userPicture.setFitWidth(250);
+            userPicture.setFitHeight(173);
         }
         else {
             noFIle.setText("No file is selected");
@@ -88,7 +92,7 @@ public class HelloController {
         user.batchNo = batch.getText();
         user.campus = campus.getText();
         user.picture = generateBtn.getText();
-        if (user.idNo == "" || user.firstName == "" || user.lastName == "" || user.phoneNumber == "" || user.emailAddress == "" ||user.batchNo == "" || user.campus == ""|| user.picture == ""){
+        if (userPicture == null || user.idNo == "" || user.firstName == "" || user.lastName == "" || user.phoneNumber == "" || user.emailAddress == "" ||user.batchNo == "" || user.campus == ""|| user.picture == ""){
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("dialogbox.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
@@ -96,7 +100,10 @@ public class HelloController {
             stage.setScene(new Scene(root1));
             stage.show();
         }else{
-            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("IDcard.fxml")));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("IDcard.fxml"));
+            root = loader.load();
+            IDCardController idCardController = loader.getController();
+            idCardController.setProfileImage(userPicture.getImage());
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -108,6 +115,7 @@ public class HelloController {
                 System.out.println("FXML file loaded successfully");
             }
         }
+        
 
     }
 
