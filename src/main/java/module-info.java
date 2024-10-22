@@ -5,6 +5,9 @@ module com.example.idfie {
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
+    requires itextpdf;
+    requires javafx.swing;
+    requires org.apache.pdfbox;
 
     opens com.example.idfie to javafx.fxml;
     exports com.example.idfie;

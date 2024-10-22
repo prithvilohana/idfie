@@ -18,16 +18,7 @@ import java.util.Objects;
 import javafx.scene.image.ImageView;
 
 import javafx.scene.image.ImageView;
-class User{
-    public String firstName;
-    public String fatherName;
-    public String emailAddress;
-    public String phoneNumber;
-    public String idNo;
-    public String batchNo;
-    public String campus;
-    public String picture;
-}
+
 public class HelloController {
 
     @FXML
@@ -35,7 +26,7 @@ public class HelloController {
     @FXML
     private TextField firstName;
     @FXML
-    private TextField lastName;
+    private TextField fatherName;
     @FXML
     private TextField email;
     @FXML
@@ -71,8 +62,8 @@ public class HelloController {
         if(selectedFile != null){
             Image image = new Image(selectedFile.toURI().toString());
             userPicture.setImage(image);
-            userPicture.setFitWidth(250);
-            userPicture.setFitHeight(173);
+            userPicture.setFitWidth(120);
+            userPicture.setFitHeight(120);
         }
         else {
             noFIle.setText("No file is selected");
@@ -85,13 +76,13 @@ public class HelloController {
     public void generateID(ActionEvent event) throws IOException {
         user.idNo = id.getText();
         user.firstName = firstName.getText();
-        user.fatherName = lastName.getText();
+        user.fatherName = fatherName.getText();
         user.phoneNumber = phone.getText();
         user.emailAddress = email.getText();
         user.batchNo = batch.getText();
         user.campus = campus.getText();
-        user.picture = generateBtn.getText();
-        if (userPicture == null || user.idNo == "" || user.firstName == "" || user.fatherName == "" || user.phoneNumber == "" || user.emailAddress == "" ||user.batchNo == "" || user.campus == ""|| user.picture == ""){
+        user.department = dept.getText();
+        if (userPicture == null || user.idNo == "" || user.firstName == "" || user.fatherName == "" || user.phoneNumber == "" || user.emailAddress == "" ||user.batchNo == "" || user.campus == ""){
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("dialogbox.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
@@ -103,18 +94,26 @@ public class HelloController {
             root = loader.load();
             IDCardController idCardController = loader.getController();
             idCardController.setProfileImage(userPicture.getImage());
+            idCardController.setIdCardName(user.firstName);
+            idCardController.setIdFName(user.fatherName);
+            idCardController.setIdNumber(user.idNo);
+            idCardController.setIdDept(user.department);
+            idCardController.setIdBatch(user.batchNo);
+            idCardController.setIdPhone(user.phoneNumber);
+            idCardController.setIdEmail(user.emailAddress);
+            idCardController.setIdCampus(user.campus);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
-            System.out.println(user.firstName +" "+ user.fatherName);
+            System.out.println(user.firstName + " " + user.fatherName);
             if (root == null) {
                 System.out.println("FXML file not found!");
             } else {
                 System.out.println("FXML file loaded successfully");
             }
         }
-        
+
 
     }
 

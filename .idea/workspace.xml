@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b294f433-35c6-48a1-820b-71d476bd507f" name="Changes" comment="scene 2 created">
+    <list default="true" id="b294f433-35c6-48a1-820b-71d476bd507f" name="Changes" comment="variable updated">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mongodb-settings-v1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/idfie/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/idfie/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/idfie/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/idfie/IDCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/idfie/IDCardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/idfie/IDcard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/idfie/IDcard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/idfie/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/idfie/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +39,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/prithvilohana/idfie.git&quot;,
-    &quot;accountId&quot;: &quot;7da9cfdc-bfe8-4b76-896b-9b495535f291&quot;
+    &quot;url&quot;: &quot;https://github.com/Yahya-Ahmed-09/idfie.git&quot;,
+    &quot;accountId&quot;: &quot;f3e49fe1-82bb-4128-ad53-ea3f31ca58c6&quot;
   }
 }</component>
   <component name="MavenImportPreferences">
@@ -54,17 +63,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.Idfie.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Light Tech/AppData/Local/SceneBuilder/SceneBuilder.exe",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.18505748",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <module name="Idfie" />
+    <configuration name="Idfie" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.idfie.HelloApplication" />
+      <module name="idfie" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729590917233</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="variable updated">
+      <option name="closed" value="true" />
+      <created>1729593699980</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729593699980</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +163,7 @@
     <MESSAGE value="idcard added" />
     <MESSAGE value="test" />
     <MESSAGE value="scene 2 created" />
-    <option name="LAST_COMMIT_MESSAGE" value="scene 2 created" />
+    <MESSAGE value="variable updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="variable updated" />
   </component>
 </project>

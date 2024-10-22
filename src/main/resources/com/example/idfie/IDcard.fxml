@@ -1,91 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFF0; -fx-border-color: #b8a898;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.idfie.IDCardController">
-    <Pane layoutX="11.0" layoutY="10.0" prefHeight="377.0" prefWidth="578.0" style="-fx-border-color: #b8a898; -fx-border-width: 3px;">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="600.0" style="-fx-background-color: #FFFFF0; -fx-border-color: #b8a898;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.idfie.IDCardController">
+    <Pane fx:id="card" layoutX="11.0" layoutY="10.0" prefHeight="377.0" prefWidth="578.0" style="-fx-border-color: #b8a898; -fx-border-width: 3px; -fx-background-color: #FFFFF0;">
         <Pane prefHeight="86.0" prefWidth="578.0" style="-fx-background-color: #1B4D3E;">
             <ImageView fitHeight="46.0" fitWidth="200.0" layoutX="14.0" layoutY="20.0">
                 <Image url="@../../../images/logohead.png" />
             </ImageView>
         </Pane>
-        <ImageView fx:id="profimageSc2" fitHeight="251.0" fitWidth="173.0" layoutX="377.0" layoutY="32.0">
+        <ImageView fx:id="profimageSc2" fitHeight="150.0" fitWidth="150.0" layoutX="377.0" layoutY="32.0">
             <Image url="@../../../images/profile.png" />
         </ImageView>
-        <Pane layoutX="369.0" layoutY="25.0" prefHeight="263.0" prefWidth="188.0" style="-fx-border-color: #b8a898; -fx-border-width: 2px;" />
-      <Label layoutX="20.0" layoutY="115.0" style="-fx-text-fill: #b8a898;" text="Sudent Name">
-         <font>
-            <Font size="28.0" />
-         </font>
-      </Label>
-      <Label layoutX="20.0" layoutY="167.0" style="-fx-text-fill: #b8a898;" text="Father Name :">
+        <Pane layoutX="369.0" layoutY="25.0" prefHeight="167.0" prefWidth="168.0" style="-fx-border-color: #b8a898; -fx-border-width: 2px;" />
+      <Label layoutX="20.0" layoutY="178.0" style="-fx-text-fill: #b8a898;" text="Father Name :">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="176.0" layoutY="167.0" style="-fx-text-fill: #b8a898;" text="Umer Bahi">
+      <Label fx:id="idFName" layoutX="176.0" layoutY="180.0" style="-fx-text-fill: #b8a898;" text="Umer Bahi">
+         <font>
+            <Font name="Poppins SemiBold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="208.0" style="-fx-text-fill: #b8a898;" text="Email Address :">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="20.0" layoutY="199.0" style="-fx-text-fill: #b8a898;" text="Email Address :">
+      <Label fx:id="idEmail" layoutX="176.0" layoutY="209.0" style="-fx-text-fill: #b8a898;" text="umerbahi@gmail.com">
+         <font>
+            <Font name="Poppins SemiBold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="239.0" style="-fx-text-fill: #b8a898;" text="Phone Number : ">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="176.0" layoutY="199.0" style="-fx-text-fill: #b8a898;" text="umerbahi@gmail.com">
+      <Label fx:id="idPhone" layoutX="176.0" layoutY="241.0" style="-fx-text-fill: #b8a898;" text="03342088755">
+         <font>
+            <Font name="Poppins SemiBold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="271.0" style="-fx-text-fill: #b8a898;" text="Department : ">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="20.0" layoutY="230.0" style="-fx-text-fill: #b8a898;" text="Phone Number : ">
+      <Label fx:id="idDept" layoutX="176.0" layoutY="272.0" style="-fx-text-fill: #b8a898;" text="CS 2ND B">
+         <font>
+            <Font name="Poppins SemiBold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="302.0" style="-fx-text-fill: #b8a898;" text="Campus : ">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="176.0" layoutY="230.0" style="-fx-text-fill: #b8a898;" text="03342088755">
+      <Label fx:id="idCampus" layoutX="176.0" layoutY="303.0" style="-fx-text-fill: #b8a898;" text="IT/CS">
+         <font>
+            <Font name="Poppins SemiBold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="334.0" style="-fx-text-fill: #b8a898;" text="Batch  No : ">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="20.0" layoutY="262.0" style="-fx-text-fill: #b8a898;" text="Department : ">
+      <Label fx:id="idBatch" layoutX="176.0" layoutY="334.0" style="-fx-text-fill: #b8a898;" text="15th">
          <font>
-            <Font size="16.0" />
+            <Font name="Poppins SemiBold" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="176.0" layoutY="262.0" style="-fx-text-fill: #b8a898;" text="CS 2ND B">
+      <Label fx:id="idNumber" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="176.0" layoutY="152.0" prefHeight="25.0" prefWidth="107.0" style="-fx-text-fill: #b8a898;" text="20236547">
          <font>
-            <Font size="16.0" />
+            <Font name="Poppins SemiBold" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="20.0" layoutY="293.0" style="-fx-text-fill: #b8a898;" text="Campus : ">
+      <Text fx:id="idCardName" fill="#b8a898" layoutX="101.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student">
+         <font>
+            <Font name="Poppins Bold" size="28.0" />
+         </font>
+      </Text>
+      <Label layoutX="20.0" layoutY="151.0" style="-fx-text-fill: #b8a898;" text="ID Number :">
          <font>
             <Font size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="176.0" layoutY="293.0" style="-fx-text-fill: #b8a898;" text="IT/CS">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="20.0" layoutY="325.0" style="-fx-text-fill: #b8a898;" text="Batch  No : ">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="176.0" layoutY="325.0" style="-fx-text-fill: #b8a898;" text="15th">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="406.0" layoutY="293.0" prefHeight="25.0" prefWidth="107.0" style="-fx-text-fill: #b8a898; -fx-border-color: #b8a898;" text="20236547">
-         <font>
-            <Font size="15.0" />
          </font>
       </Label>
     </Pane>
+   <Button fx:id="pdfDownload" layoutX="235.0" layoutY="401.0" mnemonicParsing="false" onAction="#onDownload" style="-fx-background-color: #1B4D3E; -fx-border-radius: 10px;" text="Download PDF" textFill="WHITE">
+      <font>
+         <Font name="Poppins SemiBold" size="15.0" />
+      </font>
+   </Button>
 </Pane>
