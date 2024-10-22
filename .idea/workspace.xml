@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b294f433-35c6-48a1-820b-71d476bd507f" name="Changes" comment="idcard added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/idfie/IDCardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/idfie/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/idfie/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/idfie/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/idfie/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/idfie/IDcard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/idfie/IDcard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/idfie/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/idfie/hello-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="b294f433-35c6-48a1-820b-71d476bd507f" name="Changes" comment="scene 2 created" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +101,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729504944055</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="scene 2 created">
+      <option name="closed" value="true" />
+      <created>1729590900868</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729590900868</updated>
+    </task>
+    <task id="LOCAL-00005" summary="scene 2 created">
+      <option name="closed" value="true" />
+      <created>1729590917233</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729590917233</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +135,7 @@
     <MESSAGE value="half front" />
     <MESSAGE value="idcard added" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="scene 2 created" />
+    <option name="LAST_COMMIT_MESSAGE" value="scene 2 created" />
   </component>
 </project>
