@@ -9,58 +9,58 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFF0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.idfie.HelloController">
+<BorderPane maxHeight="450.0" maxWidth="604.0" minHeight="400.0" minWidth="600.0" prefHeight="450.0" prefWidth="604.0" style="-fx-background-color: #FFFFF0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.idfie.HelloController">
   <right>
-    <AnchorPane prefHeight="400.0" prefWidth="460.0" BorderPane.alignment="CENTER">
-      <Label layoutX="20.0" layoutY="28.0" text="First Name">
+    <AnchorPane prefHeight="426.0" prefWidth="399.0" BorderPane.alignment="CENTER">
+      <Label layoutX="20.0" layoutY="50.0" text="First Name">
         <font>
           <Font size="14.0" />
         </font>
       </Label>
-      <TextField fx:id="firstName" layoutX="20.0" layoutY="56.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
-      <Label layoutX="232.0" layoutY="28.0" text="Last Name">
+      <TextField fx:id="firstName" layoutX="20.0" layoutY="78.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
+      <Label layoutX="232.0" layoutY="50.0" text="Father Name">
         <font>
           <Font size="14.0" />
         </font>
       </Label>
-      <TextField fx:id="lastName" layoutX="232.0" layoutY="57.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
-      <Label layoutX="20.0" layoutY="106.0" text="Email Address">
+      <TextField fx:id="lastName" layoutX="232.0" layoutY="79.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
+      <Label layoutX="20.0" layoutY="128.0" text="Email Address">
         <font>
           <Font size="14.0" />
         </font>
       </Label>
-      <TextField fx:id="email" layoutX="20.0" layoutY="134.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
-      <Label layoutX="232.0" layoutY="106.0" text="Phone Number">
+      <TextField fx:id="email" layoutX="20.0" layoutY="156.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
+      <Label layoutX="232.0" layoutY="128.0" text="Phone Number">
         <font>
           <Font size="14.0" />
         </font>
       </Label>
-      <TextField fx:id="phone" layoutX="232.0" layoutY="135.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
-      <Label layoutX="20.0" layoutY="184.0" text="Department/section">
+      <TextField fx:id="phone" layoutX="232.0" layoutY="157.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
+      <Label layoutX="20.0" layoutY="206.0" text="Department(ex: CS 2nd B)">
         <font>
           <Font size="14.0" />
         </font>
       </Label>
-      <TextField fx:id="dept" layoutX="20.0" layoutY="212.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
-      <Label layoutX="232.0" layoutY="184.0" text="Seat No">
+      <TextField fx:id="dept" layoutX="20.0" layoutY="234.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
+      <Label layoutX="232.0" layoutY="206.0" text="Seat No">
         <font>
           <Font size="14.0" />
         </font>
       </Label>
-      <TextField fx:id="id" layoutX="232.0" layoutY="213.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
-      <Label layoutX="19.0" layoutY="262.0" text="Batch No">
+      <TextField fx:id="id" layoutX="232.0" layoutY="235.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
+      <Label layoutX="19.0" layoutY="284.0" text="Batch No">
         <font>
           <Font size="14.0" />
         </font>
       </Label>
-      <TextField fx:id="batch" layoutX="19.0" layoutY="290.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
-      <Label layoutX="231.0" layoutY="262.0" text="Campus">
+      <TextField fx:id="batch" layoutX="19.0" layoutY="312.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
+      <Label layoutX="231.0" layoutY="284.0" text="Campus">
         <font>
           <Font size="14.0" />
         </font>
       </Label>
-      <TextField fx:id="campus" layoutX="231.0" layoutY="291.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
-      <Button fx:id="generateBtn" layoutX="110.0" layoutY="344.0" mnemonicParsing="false" onAction="#generateBtnClick" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: #1B4D3E; -fx-text-fill: white; -fx-border-radius: 10px;" text="Upload Your Picture">
+      <TextField fx:id="campus" layoutX="231.0" layoutY="313.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
+      <Button fx:id="generateBtn" layoutX="110.0" layoutY="366.0" mnemonicParsing="false" onAction="#generateBtnClick" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: #1B4D3E; -fx-text-fill: white; -fx-border-radius: 10px;" text="Upload Your Picture">
         <font>
           <Font size="15.0" />
         </font>
