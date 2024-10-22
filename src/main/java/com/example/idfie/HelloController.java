@@ -20,10 +20,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.image.ImageView;
 class User{
     public String firstName;
-    public String lastName;
+    public String fatherName;
     public String emailAddress;
     public String phoneNumber;
-    public String dpt;
     public String idNo;
     public String batchNo;
     public String campus;
@@ -86,13 +85,13 @@ public class HelloController {
     public void generateID(ActionEvent event) throws IOException {
         user.idNo = id.getText();
         user.firstName = firstName.getText();
-        user.lastName = lastName.getText();
+        user.fatherName = lastName.getText();
         user.phoneNumber = phone.getText();
         user.emailAddress = email.getText();
         user.batchNo = batch.getText();
         user.campus = campus.getText();
         user.picture = generateBtn.getText();
-        if (userPicture == null || user.idNo == "" || user.firstName == "" || user.lastName == "" || user.phoneNumber == "" || user.emailAddress == "" ||user.batchNo == "" || user.campus == ""|| user.picture == ""){
+        if (userPicture == null || user.idNo == "" || user.firstName == "" || user.fatherName == "" || user.phoneNumber == "" || user.emailAddress == "" ||user.batchNo == "" || user.campus == ""|| user.picture == ""){
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("dialogbox.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
@@ -108,7 +107,7 @@ public class HelloController {
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
-            System.out.println(user.firstName +" "+ user.lastName);
+            System.out.println(user.firstName +" "+ user.fatherName);
             if (root == null) {
                 System.out.println("FXML file not found!");
             } else {
@@ -119,7 +118,4 @@ public class HelloController {
 
     }
 
-
-    @FXML
-    private ImageView profileImage;
 }
