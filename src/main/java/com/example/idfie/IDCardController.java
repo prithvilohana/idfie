@@ -13,6 +13,7 @@ import javafx.embed.swing.SwingFXUtils;
 import javax.imageio.ImageIO;
 import javafx.scene.SnapshotParameters;
 import javafx.scene.image.WritableImage;
+import javafx.scene.transform.Transform;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -53,34 +54,15 @@ public class IDCardController {
     @FXML
     private Label idCampus;
 
-    public void setIdCardName(String name) {
+
+    public void setIdInfo(String name, String fName, String idNum, String batch, String campus, String dept, String email, String phone){
         idCardName.setText(name);
-    }
-
-    public void setIdFName(String fatherName) {
-        idFName.setText(fatherName);
-    }
-    public  void setIdNumber(String IDNumber){
-        idNumber.setText(IDNumber);
-    }
-
-    public void setIdBatch(String batch) {
+        idFName.setText(fName);
+        idNumber.setText(idNum);
         idBatch.setText(batch);
-    }
-
-    public void setIdCampus(String campus) {
         idCampus.setText(campus);
-    }
-
-    public void setIdDept(String department) {
-        idDept.setText(department);
-    }
-
-    public void setIdEmail(String email) {
+        idDept.setText(dept);
         idEmail.setText(email);
-    }
-
-    public void setIdPhone(String phone) {
         idPhone.setText(phone);
     }
     @FXML
@@ -96,8 +78,11 @@ public class IDCardController {
         // Get the bounds of the card pane
         Bounds bounds = card.getBoundsInLocal();
 
-        // Convert the Pane to an image
-        WritableImage snapshot = card.snapshot(new SnapshotParameters(), null);
+        // Convert the Pane to an image with higher DPI for better resolution
+        SnapshotParameters params = new SnapshotParameters();
+        params.setTransform(Transform.scale(2, 2)); // Set a higher DPI value
+
+        WritableImage snapshot = card.snapshot(params, null);
 
         // Save the image as a temporary file
         File tempFile = new File("temp.png");
@@ -106,11 +91,11 @@ public class IDCardController {
 
             // Create a PDF document and set the page size to match the pane size
             PDDocument document = new PDDocument();
-            PDPage page = new PDPage(new PDRectangle((float) bounds.getWidth(), (float) bounds.getHeight()));
+            PDPage page = new PDPage(new PDRectangle((float) bounds.getWidth() * 2, (float) bounds.getHeight() * 2)); // Adjusted for higher resolution
             document.addPage(page);
 
             PDPageContentStream contentStream = new PDPageContentStream(document, page);
-            contentStream.drawImage(PDImageXObject.createFromFile("temp.png", document), 0, 0, (float) bounds.getWidth(), (float) bounds.getHeight());
+            contentStream.drawImage(PDImageXObject.createFromFile("temp.png", document), 0, 0, (float) bounds.getWidth() * 2, (float) bounds.getHeight() * 2); // Adjusted for higher resolution
             contentStream.close();
 
             // Save the PDF file using a FileChooser

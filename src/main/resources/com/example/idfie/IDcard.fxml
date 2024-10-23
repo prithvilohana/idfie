@@ -84,7 +84,7 @@
             <Font name="Poppins SemiBold" size="15.0" />
          </font>
       </Label>
-      <Text fx:id="idCardName" fill="#b8a898" layoutX="101.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student">
+      <Text fx:id="idCardName" fill="#b8a898" layoutX="21.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student">
          <font>
             <Font name="Poppins Bold" size="28.0" />
          </font>

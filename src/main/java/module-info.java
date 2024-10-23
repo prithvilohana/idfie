@@ -8,6 +8,7 @@ module com.example.idfie {
     requires itextpdf;
     requires javafx.swing;
     requires org.apache.pdfbox;
+    requires mongo.java.driver;
 
     opens com.example.idfie to javafx.fxml;
     exports com.example.idfie;
