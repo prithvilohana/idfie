@@ -94,6 +94,7 @@
             <Font size="16.0" />
          </font>
       </Label>
+      <ImageView fx:id="qrCodeImage" fitHeight="100.0" fitWidth="100.0" layoutX="396.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" />
     </Pane>
    <Button fx:id="pdfDownload" layoutX="235.0" layoutY="401.0" mnemonicParsing="false" onAction="#onDownload" style="-fx-background-color: #1B4D3E; -fx-border-radius: 10px;" text="Download PDF" textFill="WHITE">
       <font>

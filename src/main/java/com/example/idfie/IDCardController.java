@@ -32,29 +32,14 @@ public class IDCardController {
 
     @FXML
     private Text idCardName;
-    @FXML
-    private Label idDept;
 
     @FXML
-    private Label idEmail;
+    private Label idDept, idEmail, idFName, idNumber, idPhone, idBatch, idCampus;
 
     @FXML
-    private Label idFName;
+    private ImageView qrCodeImage;
 
-    @FXML
-    private Label idNumber;
-
-    @FXML
-    private Label idPhone;
-
-    @FXML
-    private Label idBatch;
-
-    @FXML
-    private Label idCampus;
-
-
-    public void setIdInfo(Image image, String name, String fName, String idNum, String batch, String campus, String dept, String email, String phone){
+    public void setIdInfo(Image image, String name, String fName, String idNum, String batch, String campus, String dept, String email, String phone, String qrCodeFilePath){
         idCardName.setText(name);
         idFName.setText(fName);
         idNumber.setText(idNum);
@@ -64,6 +49,9 @@ public class IDCardController {
         idEmail.setText(email);
         idPhone.setText(phone);
         profimageSc2.setImage(image);
+        File qrFile = new File(qrCodeFilePath);
+        Image qrCode = new Image(qrFile.toURI().toString());
+        qrCodeImage.setImage(qrCode);
     }
     @FXML
     private Button pdfDownload;

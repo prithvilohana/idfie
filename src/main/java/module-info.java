@@ -9,6 +9,8 @@ module com.example.idfie {
     requires javafx.swing;
     requires org.apache.pdfbox;
     requires mongo.java.driver;
+    requires com.google.zxing;
+    requires com.google.zxing.javase;
 
     opens com.example.idfie to javafx.fxml;
     exports com.example.idfie;
