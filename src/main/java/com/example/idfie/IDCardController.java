@@ -22,7 +22,6 @@ import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
-import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
@@ -55,7 +54,7 @@ public class IDCardController {
     private Label idCampus;
 
 
-    public void setIdInfo(String name, String fName, String idNum, String batch, String campus, String dept, String email, String phone){
+    public void setIdInfo(Image image, String name, String fName, String idNum, String batch, String campus, String dept, String email, String phone){
         idCardName.setText(name);
         idFName.setText(fName);
         idNumber.setText(idNum);
@@ -64,6 +63,7 @@ public class IDCardController {
         idDept.setText(dept);
         idEmail.setText(email);
         idPhone.setText(phone);
+        profimageSc2.setImage(image);
     }
     @FXML
     private Button pdfDownload;
@@ -114,15 +114,6 @@ public class IDCardController {
         } finally {
             // Delete the temporary image file
             tempFile.delete();
-        }
-    }
-    
-
-    User user = new User();
-    // Method to set the image in Scene 2
-    public void setProfileImage(Image image) {
-        if (profimageSc2 != null) {
-            profimageSc2.setImage(image);
         }
     }
 }
