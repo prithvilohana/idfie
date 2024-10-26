@@ -60,31 +60,48 @@ public class IDCardController {
     @FXML
     private Pane card;
 
+    @FXML
+    private Pane card1;
+
 
     @FXML
     void onDownload(ActionEvent event) {
-        // Get the bounds of the card pane
-        Bounds bounds = card.getBoundsInLocal();
 
-        // Convert the Pane to an image with higher DPI for better resolution
+        // Get the bounds of the card panes
+        Bounds bounds = card.getBoundsInLocal();
+        Bounds bounds1 = card1.getBoundsInLocal();
+
+        // Convert the Panes to images with higher DPI for better resolution
         SnapshotParameters params = new SnapshotParameters();
         params.setTransform(Transform.scale(2, 2)); // Set a higher DPI value
 
-        WritableImage snapshot = card.snapshot(params, null);
+        // Create a PDF document
+        PDDocument document = new PDDocument();
 
-        // Save the image as a temporary file
-        File tempFile = new File("temp.png");
         try {
+            // Snapshot and save the first card
+            WritableImage snapshot = card.snapshot(params, null);
+            File tempFile = new File("temp.png");
             ImageIO.write(SwingFXUtils.fromFXImage(snapshot, null), "png", tempFile);
 
-            // Create a PDF document and set the page size to match the pane size
-            PDDocument document = new PDDocument();
-            PDPage page = new PDPage(new PDRectangle((float) bounds.getWidth() * 2, (float) bounds.getHeight() * 2)); // Adjusted for higher resolution
+            PDPage page = new PDPage(new PDRectangle((float) card.getWidth() * 2, (float) card.getHeight() * 2)); // Adjusted for higher resolution
             document.addPage(page);
-
             PDPageContentStream contentStream = new PDPageContentStream(document, page);
-            contentStream.drawImage(PDImageXObject.createFromFile("temp.png", document), 0, 0, (float) bounds.getWidth() * 2, (float) bounds.getHeight() * 2); // Adjusted for higher resolution
+            contentStream.drawImage(PDImageXObject.createFromFile("temp.png", document), 0, 0, (float) card.getWidth() * 2, (float) card.getHeight() * 2);
             contentStream.close();
+            tempFile.delete();
+
+            // Snapshot and save the second card
+            WritableImage snapshot1 = card1.snapshot(params, null);
+            File tempFile1 = new File("temp1.png");
+            ImageIO.write(SwingFXUtils.fromFXImage(snapshot1, null), "png", tempFile1);
+
+            PDPage page1 = new PDPage(new PDRectangle((float) card1.getWidth() * 2, (float) card1.getHeight() * 2)); // Adjusted for higher resolution
+            document.addPage(page1);
+            PDPageContentStream contentStream1 = new PDPageContentStream(document, page1);
+            contentStream1.drawImage(PDImageXObject.createFromFile("temp1.png", document), 0, 0, (float) card1.getWidth() * 2, (float) card1.getHeight() * 2);
+            contentStream1.close();
+            tempFile1.delete();
 
             // Save the PDF file using a FileChooser
             FileChooser fileChooser = new FileChooser();
@@ -96,12 +113,14 @@ public class IDCardController {
                 document.save(selectedFile);
             }
 
-            document.close();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            // Delete the temporary image file
-            tempFile.delete();
+            try {
+                document.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
