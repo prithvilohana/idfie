@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Idfie:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b294f433-35c6-48a1-820b-71d476bd507f" name="Changes" comment="Backend Updated + PDF File download Button">
+    <list default="true" id="b294f433-35c6-48a1-820b-71d476bd507f" name="Changes" comment="QR Code implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/idfie/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/idfie/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/idfie/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/idfie/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/idfie/IDCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/idfie/IDCardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/idfie/IDcard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/idfie/IDcard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/idfie/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/idfie/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +40,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Yahya-Ahmed-09/idfie.git&quot;,
-    &quot;accountId&quot;: &quot;f3e49fe1-82bb-4128-ad53-ea3f31ca58c6&quot;
+    &quot;url&quot;: &quot;https://github.com/prithvilohana/idfie.git&quot;,
+    &quot;accountId&quot;: &quot;7da9cfdc-bfe8-4b76-896b-9b495535f291&quot;
   }
 }</component>
   <component name="MavenImportPreferences">
@@ -57,25 +64,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Idfie.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Light Tech/AppData/Local/SceneBuilder/SceneBuilder.exe&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.18505748&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="Idfie" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.example.idfie.HelloApplication" />
-      <module name="idfie" />
+    <configuration name="main" type="Application" factoryName="Application">
+      <module name="Idfie" />
+      <option name="VM_PARAMETERS" value="VM Options: --module-path &quot;C:\Users\Dr.Pc\javafx-sdk-23.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml  " />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,23 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729590917233</updated>
     </task>
-    <task id="LOCAL-00006" summary="variable updated">
+    <task id="LOCAL-00006" summary="COde optimization">
       <option name="closed" value="true" />
-      <created>1729593699980</created>
+      <created>1729763348780</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1729593699980</updated>
+      <updated>1729763348780</updated>
     </task>
-    <task id="LOCAL-00007" summary="Backend Updated + PDF File download Button">
-      <option name="closed" value="true" />
-      <created>1729625198894</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1729625198894</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,8 +165,7 @@
     <MESSAGE value="idcard added" />
     <MESSAGE value="test" />
     <MESSAGE value="scene 2 created" />
-    <MESSAGE value="variable updated" />
-    <MESSAGE value="Backend Updated + PDF File download Button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Backend Updated + PDF File download Button" />
+    <MESSAGE value="COde optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="COde optimization" />
   </component>
 </project>

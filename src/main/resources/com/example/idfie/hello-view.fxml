@@ -79,6 +79,11 @@
       </ImageView>
       <ImageView fx:id="userPicture" fitHeight="120.0" fitWidth="120.0" layoutX="37.0" layoutY="298.0" pickOnBounds="true" />
          <Label fx:id="noFIle" layoutX="5.0" layoutY="335.0" prefHeight="17.0" prefWidth="132.0" style="-fx-text-fill: white;" />
+         <Button fx:id="delImage" layoutX="34.0" layoutY="294.0" mnemonicParsing="false" onAction="#delimageCross" style="-fx-background-color: white; -fx-text-fill: red;" text="X">
+            <font>
+               <Font size="11.0" />
+            </font>
+         </Button>
     </AnchorPane>
   </left>
 </BorderPane>
