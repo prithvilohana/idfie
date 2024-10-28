@@ -2,7 +2,10 @@ package com.example.idfie;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Bounds;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -53,6 +56,21 @@ public class IDCardController {
         Image qrCode = new Image(qrFile.toURI().toString());
         qrCodeImage.setImage(qrCode);
     }
+
+    @FXML
+    private Button goBackbtn;
+    private Parent root;
+    @FXML
+    private void goBackbtnfunc() throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+        root = loader.load();
+
+        Stage stage = (Stage) goBackbtn.getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+
     @FXML
     private Button pdfDownload;
 

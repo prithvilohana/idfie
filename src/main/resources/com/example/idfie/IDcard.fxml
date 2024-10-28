@@ -20,148 +20,158 @@
             <Image url="@../../../images/profile.png" />
         </ImageView>
         <Pane layoutX="369.0" layoutY="25.0" prefHeight="167.0" prefWidth="168.0" style="-fx-border-color: #b8a898; -fx-border-width: 2px;" />
-      <Label layoutX="20.0" layoutY="178.0" style="-fx-text-fill: #b8a898;" text="Father Name :">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Label fx:id="idFName" layoutX="176.0" layoutY="180.0" style="-fx-text-fill: #b8a898;" text="Umer Bahi">
-         <font>
-            <Font name="Poppins SemiBold" size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="20.0" layoutY="208.0" style="-fx-text-fill: #b8a898;" text="Email Address :">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Label fx:id="idEmail" layoutX="176.0" layoutY="209.0" style="-fx-text-fill: #b8a898;" text="umerbahi@gmail.com">
-         <font>
-            <Font name="Poppins SemiBold" size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="20.0" layoutY="239.0" style="-fx-text-fill: #b8a898;" text="Phone Number : ">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Label fx:id="idPhone" layoutX="176.0" layoutY="241.0" style="-fx-text-fill: #b8a898;" text="03342088755">
-         <font>
-            <Font name="Poppins SemiBold" size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="20.0" layoutY="271.0" style="-fx-text-fill: #b8a898;" text="Department : ">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Label fx:id="idDept" layoutX="176.0" layoutY="272.0" style="-fx-text-fill: #b8a898;" text="CS 2ND B">
-         <font>
-            <Font name="Poppins SemiBold" size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="20.0" layoutY="302.0" style="-fx-text-fill: #b8a898;" text="Campus : ">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Label fx:id="idCampus" layoutX="176.0" layoutY="303.0" style="-fx-text-fill: #b8a898;" text="IT/CS">
-         <font>
-            <Font name="Poppins SemiBold" size="15.0" />
-         </font>
-      </Label>
-      <Label layoutX="20.0" layoutY="334.0" style="-fx-text-fill: #b8a898;" text="Batch  No : ">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Label fx:id="idBatch" layoutX="176.0" layoutY="334.0" style="-fx-text-fill: #b8a898;" text="15th">
-         <font>
-            <Font name="Poppins SemiBold" size="15.0" />
-         </font>
-      </Label>
-      <Label fx:id="idNumber" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="176.0" layoutY="152.0" prefHeight="25.0" prefWidth="107.0" style="-fx-text-fill: #b8a898;" text="20236547">
-         <font>
-            <Font name="Poppins SemiBold" size="15.0" />
-         </font>
-      </Label>
-      <Text fx:id="idCardName" fill="#b8a898" layoutX="21.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student">
-         <font>
-            <Font name="Poppins Bold" size="28.0" />
-         </font>
-      </Text>
-      <Label layoutX="20.0" layoutY="151.0" style="-fx-text-fill: #b8a898;" text="ID Number :">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
+        <Label layoutX="20.0" layoutY="178.0" style="-fx-text-fill: #b8a898;" text="Father Name :">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="idFName" layoutX="176.0" layoutY="180.0" style="-fx-text-fill: #b8a898;" text="Umer Bahi">
+            <font>
+                <Font name="Poppins SemiBold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="208.0" style="-fx-text-fill: #b8a898;" text="Email Address :">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="idEmail" layoutX="176.0" layoutY="209.0" style="-fx-text-fill: #b8a898;" text="umerbahi@gmail.com">
+            <font>
+                <Font name="Poppins SemiBold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="239.0" style="-fx-text-fill: #b8a898;" text="Phone Number : ">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="idPhone" layoutX="176.0" layoutY="241.0" style="-fx-text-fill: #b8a898;" text="03342088755">
+            <font>
+                <Font name="Poppins SemiBold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="271.0" style="-fx-text-fill: #b8a898;" text="Department : ">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="idDept" layoutX="176.0" layoutY="272.0" style="-fx-text-fill: #b8a898;" text="CS 2ND B">
+            <font>
+                <Font name="Poppins SemiBold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="302.0" style="-fx-text-fill: #b8a898;" text="Campus : ">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="idCampus" layoutX="176.0" layoutY="303.0" style="-fx-text-fill: #b8a898;" text="IT/CS">
+            <font>
+                <Font name="Poppins SemiBold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="20.0" layoutY="334.0" style="-fx-text-fill: #b8a898;" text="Batch  No : ">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="idBatch" layoutX="176.0" layoutY="334.0" style="-fx-text-fill: #b8a898;" text="15th">
+            <font>
+                <Font name="Poppins SemiBold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="idNumber" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="176.0" layoutY="152.0" prefHeight="25.0" prefWidth="107.0" style="-fx-text-fill: #b8a898;" text="20236547">
+            <font>
+                <Font name="Poppins SemiBold" size="15.0" />
+            </font>
+        </Label>
+        <Text fx:id="idCardName" fill="#b8a898" layoutX="21.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student">
+            <font>
+                <Font name="Poppins Bold" size="28.0" />
+            </font>
+        </Text>
+        <Label layoutX="20.0" layoutY="151.0" style="-fx-text-fill: #b8a898;" text="ID Number :">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="142.0" fitWidth="142.0" layoutX="369.0" layoutY="212.0">
+         <image>
+            <Image url="@../../../images/IDCard-ezgif.com-gif-maker.gif" />
+         </image>
+      </ImageView>
     </Pane>
-   <Pane fx:id="card1" layoutX="609.0" layoutY="67.0" prefHeight="377.0" prefWidth="578.0" style="-fx-border-color: #b8a898; -fx-border-width: 3px; -fx-background-color: #FFFFF0;">
-      <children>
-         <ImageView fx:id="qrCodeImage1" fitHeight="100.0" fitWidth="100.0" layoutX="396.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" />
-         <Rectangle arcWidth="5.0" fill="#1b4d3e" height="13.0" layoutX="89.0" layoutY="1.0" smooth="false" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="489.0" />
-         <Rectangle arcWidth="5.0" fill="#1b4d3e" height="129.0" layoutX="1.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="38.0" />
-         <Rectangle arcWidth="5.0" fill="#1b4d3e" height="98.0" layoutX="1.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
-         <Rectangle arcWidth="5.0" fill="#1b4d3e" height="369.0" layoutX="521.0" layoutY="8.0" smooth="false" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="57.0" />
-         <Rectangle arcWidth="5.0" fill="#1b4d3e" height="98.0" layoutX="442.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="104.0" />
-         <Rectangle arcWidth="5.0" fill="#1b4d3e" height="35.0" layoutX="155.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="252.0" />
-         <Label layoutX="183.0" layoutY="39.0" text="Terms &amp; Conditions" textFill="WHITE">
-            <font>
-               <Font name="Poppins SemiBold" size="20.0" />
-            </font>
-         </Label>
-         <Text layoutX="96.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The IDFIE ID card is non-transferable and should not be shared with others.">
-            <font>
-               <Font name="Poppins Regular" size="10.0" />
-            </font>
-         </Text>
-         <Text layoutX="123.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Unauthorized use of the card may result in disciplinary action.">
-            <font>
-               <Font name="Poppins Regular" size="10.0" />
-            </font>
-         </Text>
-         <Text layoutX="104.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In case of loss or theft of the IDFIE ID card, the cardholder must report it ">
-            <font>
-               <Font name="Poppins Regular" size="10.0" />
-            </font>
-         </Text>
-         <Text layoutX="119.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="immediately to the issuing authority to prevent unauthorized use.">
-            <font>
-               <Font name="Poppins Regular" size="10.0" />
-            </font>
-         </Text>
-         <Rectangle arcWidth="5.0" fill="#1f93ff00" height="113.0" layoutX="392.0" layoutY="232.0" stroke="#b8a898" strokeType="INSIDE" strokeWidth="2.0" width="118.0" />
-         <ImageView fx:id="qrCodeImage" fitHeight="100.0" fitWidth="100.0" layoutX="400.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" />
-         <ImageView fitHeight="42.0" fitWidth="177.0" layoutX="12.0" layoutY="305.0">
-            <image>
-               <Image url="@../../../images/logohead.png" />
-            </image>
-         </ImageView>
-         <Text layoutX="90.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The issuing organization is not liable for any damages or losses incurred as a">
-            <font>
-               <Font name="Poppins Regular" size="10.0" />
-            </font>
-         </Text>
-         <Text layoutX="167.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="result of the use or misuse of the IDFIE ID card.">
-            <font>
-               <Font name="Poppins Regular" size="10.0" />
-            </font>
-         </Text>
-      </children>
-   </Pane>
-   <Button fx:id="pdfDownload" layoutX="534.0" layoutY="465.0" mnemonicParsing="false" onAction="#onDownload" style="-fx-background-color: #1B4D3E; -fx-border-radius: 10px;" text="Download PDF" textFill="WHITE">
+    <Pane fx:id="card1" layoutX="609.0" layoutY="67.0" prefHeight="377.0" prefWidth="578.0" style="-fx-border-color: #b8a898; -fx-border-width: 3px; -fx-background-color: #FFFFF0;">
+        <children>
+            <ImageView fx:id="qrCodeImage1" fitHeight="100.0" fitWidth="100.0" layoutX="396.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" />
+            <Rectangle arcWidth="5.0" fill="#1b4d3e" height="13.0" layoutX="89.0" layoutY="1.0" smooth="false" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="489.0" />
+            <Rectangle arcWidth="5.0" fill="#1b4d3e" height="129.0" layoutX="1.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="38.0" />
+            <Rectangle arcWidth="5.0" fill="#1b4d3e" height="98.0" layoutX="1.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+            <Rectangle arcWidth="5.0" fill="#1b4d3e" height="369.0" layoutX="521.0" layoutY="8.0" smooth="false" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="57.0" />
+            <Rectangle arcWidth="5.0" fill="#1b4d3e" height="98.0" layoutX="442.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="104.0" />
+            <Rectangle arcWidth="5.0" fill="#1b4d3e" height="35.0" layoutX="155.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="252.0" />
+            <Label layoutX="183.0" layoutY="39.0" text="Terms &amp; Conditions" textFill="WHITE">
+                <font>
+                    <Font name="Poppins SemiBold" size="20.0" />
+                </font>
+            </Label>
+            <Text layoutX="96.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The IDFIE ID card is non-transferable and should not be shared with others.">
+                <font>
+                    <Font name="Poppins Regular" size="10.0" />
+                </font>
+            </Text>
+            <Text layoutX="123.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Unauthorized use of the card may result in disciplinary action.">
+                <font>
+                    <Font name="Poppins Regular" size="10.0" />
+                </font>
+            </Text>
+            <Text layoutX="104.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In case of loss or theft of the IDFIE ID card, the cardholder must report it ">
+                <font>
+                    <Font name="Poppins Regular" size="10.0" />
+                </font>
+            </Text>
+            <Text layoutX="119.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="immediately to the issuing authority to prevent unauthorized use.">
+                <font>
+                    <Font name="Poppins Regular" size="10.0" />
+                </font>
+            </Text>
+            <Rectangle arcWidth="5.0" fill="#1f93ff00" height="113.0" layoutX="392.0" layoutY="232.0" stroke="#b8a898" strokeType="INSIDE" strokeWidth="2.0" width="118.0" />
+            <ImageView fx:id="qrCodeImage" fitHeight="100.0" fitWidth="100.0" layoutX="400.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="42.0" fitWidth="177.0" layoutX="12.0" layoutY="305.0">
+                <image>
+                    <Image url="@../../../images/logohead.png" />
+                </image>
+            </ImageView>
+            <Text layoutX="90.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The issuing organization is not liable for any damages or losses incurred as a">
+                <font>
+                    <Font name="Poppins Regular" size="10.0" />
+                </font>
+            </Text>
+            <Text layoutX="167.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="result of the use or misuse of the IDFIE ID card.">
+                <font>
+                    <Font name="Poppins Regular" size="10.0" />
+                </font>
+            </Text>
+        </children>
+    </Pane>
+    <Button fx:id="pdfDownload" layoutX="534.0" layoutY="465.0" mnemonicParsing="false" onAction="#onDownload" style="-fx-background-color: #1B4D3E; -fx-border-radius: 10px;" text="Download PDF" textFill="WHITE">
+        <font>
+            <Font name="Poppins SemiBold" size="15.0" />
+        </font>
+    </Button>
+    <Label layoutX="203.0" layoutY="14.0" text="Front Side">
+        <font>
+            <Font name="Poppins SemiBold" size="38.0" />
+        </font>
+    </Label>
+    <Label layoutX="802.0" layoutY="14.0" text="Back Side">
+        <font>
+            <Font name="Poppins SemiBold" size="38.0" />
+        </font>
+    </Label>
+   <Button fx:id="goBackbtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBackbtnfunc" style="-fx-background-color: #1B4D3E; -fx-border-radius: 10px;" text="⬅ Go Back" textFill="WHITE">
       <font>
          <Font name="Poppins SemiBold" size="15.0" />
       </font>
    </Button>
-   <Label layoutX="203.0" layoutY="14.0" text="Front Side">
-      <font>
-         <Font name="Poppins SemiBold" size="38.0" />
-      </font>
-   </Label>
-   <Label layoutX="802.0" layoutY="14.0" text="Back Side">
-      <font>
-         <Font name="Poppins SemiBold" size="38.0" />
-      </font>
-   </Label>
 </Pane>
