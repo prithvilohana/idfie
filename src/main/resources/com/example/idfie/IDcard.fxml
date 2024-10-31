@@ -16,6 +16,11 @@
                 <Image url="@../../../images/logohead.png" />
             </ImageView>
         </Pane>
+      <ImageView fitHeight="198.0" fitWidth="200.0" layoutX="361.0" layoutY="182.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/ID-Card.png" />
+         </image>
+      </ImageView>
         <ImageView fx:id="profimageSc2" fitHeight="150.0" fitWidth="150.0" layoutX="377.0" layoutY="32.0">
             <Image url="@../../../images/profile.png" />
         </ImageView>
@@ -25,7 +30,7 @@
                 <Font size="16.0" />
             </font>
         </Label>
-        <Label fx:id="idFName" layoutX="176.0" layoutY="180.0" style="-fx-text-fill: #b8a898;" text="Umer Bahi">
+        <Label fx:id="idFName" layoutX="176.0" layoutY="180.0" style="-fx-text-fill: #b8a898;" text="Example">
             <font>
                 <Font name="Poppins SemiBold" size="15.0" />
             </font>
@@ -35,7 +40,7 @@
                 <Font size="16.0" />
             </font>
         </Label>
-        <Label fx:id="idEmail" layoutX="176.0" layoutY="209.0" style="-fx-text-fill: #b8a898;" text="umerbahi@gmail.com">
+        <Label fx:id="idEmail" layoutX="176.0" layoutY="209.0" style="-fx-text-fill: #b8a898;" text="Example@gmail.com">
             <font>
                 <Font name="Poppins SemiBold" size="15.0" />
             </font>
@@ -95,15 +100,15 @@
                 <Font size="16.0" />
             </font>
         </Label>
-      <ImageView fitHeight="142.0" fitWidth="142.0" layoutX="369.0" layoutY="212.0">
-         <image>
-            <Image url="@../../../images/IDCard-ezgif.com-gif-maker.gif" />
-         </image>
-      </ImageView>
     </Pane>
     <Pane fx:id="card1" layoutX="609.0" layoutY="67.0" prefHeight="377.0" prefWidth="578.0" style="-fx-border-color: #b8a898; -fx-border-width: 3px; -fx-background-color: #FFFFF0;">
         <children>
             <ImageView fx:id="qrCodeImage1" fitHeight="100.0" fitWidth="100.0" layoutX="396.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" />
+         <ImageView fitHeight="336.0" fitWidth="424.0" layoutX="110.0" layoutY="25.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/ID-Card.png" />
+            </image>
+         </ImageView>
             <Rectangle arcWidth="5.0" fill="#1b4d3e" height="13.0" layoutX="89.0" layoutY="1.0" smooth="false" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="489.0" />
             <Rectangle arcWidth="5.0" fill="#1b4d3e" height="129.0" layoutX="1.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="38.0" />
             <Rectangle arcWidth="5.0" fill="#1b4d3e" height="98.0" layoutX="1.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />

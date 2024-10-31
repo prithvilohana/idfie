@@ -7,9 +7,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="450.0" maxWidth="604.0" minHeight="400.0" minWidth="600.0" prefHeight="450.0" prefWidth="604.0" style="-fx-background-color: #FFFFF0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.idfie.HelloController">
+<BorderPane maxHeight="517.0" maxWidth="604.0" minHeight="400.0" minWidth="600.0" prefHeight="517.0" prefWidth="604.0" style="-fx-background-color: #FFFFF0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.idfie.HelloController">
   <right>
     <AnchorPane prefHeight="426.0" prefWidth="399.0" BorderPane.alignment="CENTER">
       <Label layoutX="18.0" layoutY="54.0" text="First Name">
@@ -29,7 +31,7 @@
           <Font size="14.0" />
         </font>
       </Label>
-      <TextField fx:id="email" layoutX="18.0" layoutY="160.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
+      <TextField fx:id="email" layoutX="18.0" layoutY="160.0" onKeyPressed="#checkEmail" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
       <Label layoutX="230.0" layoutY="132.0" text="Phone Number">
         <font>
           <Font size="14.0" />
@@ -60,28 +62,44 @@
         </font>
       </Label>
       <TextField fx:id="campus" layoutX="229.0" layoutY="317.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: #1B4D3E; -fx-border-radius: 10px;" />
-      <Button fx:id="uploadBtn" layoutX="106.0" layoutY="364.0" mnemonicParsing="false" onAction="#uploadBtnClick" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: #1B4D3E; -fx-text-fill: white; -fx-border-radius: 10px;" text="Upload Your Picture">
-        <font>
-          <Font size="15.0" />
-        </font>
+         <Text fx:id="invalidEmail" fill="#d70000" layoutX="18.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid Email">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Text>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="138.0" layoutX="25.0" layoutY="361.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-dash-array: 5px;" width="345.0" />
+      <Button fx:id="uploadBtn" layoutX="108.0" layoutY="430.0" mnemonicParsing="false" onAction="#uploadBtnClick" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: #1B4D3E; -fx-text-fill: white; -fx-border-radius: 10px;" text="Upload Your Picture">
+            <font>
+               <Font size="15.0" />
+            </font>
       </Button>
+         <ImageView fitHeight="49.0" fitWidth="62.0" layoutX="169.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/upload.png" />
+            </image>
+         </ImageView>
+         <Text layoutX="142.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supported Files: PNG, JPG">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Text>
     </AnchorPane>
   </right>
   <left>
     <AnchorPane prefHeight="400.0" prefWidth="153.0" style="-fx-background-color: #1B4D3E;" BorderPane.alignment="CENTER">
-      <Button fx:id="IdGenerator" layoutX="16.0" layoutY="243.0" mnemonicParsing="false" onAction="#generateID" prefHeight="32.0" prefWidth="168.0" style="-fx-background-color: white; -fx-text-fill: #1B4D3E; -fx-border-radius: 10px;" text="Generate Your Id">
+      <Button fx:id="IdGenerator" layoutX="16.0" layoutY="276.0" mnemonicParsing="false" onAction="#generateID" prefHeight="32.0" prefWidth="168.0" style="-fx-background-color: white; -fx-text-fill: #1B4D3E; -fx-border-radius: 10px;" text="Generate Your Id">
         <font>
           <Font size="15.0" />
         </font>
       </Button>
-      <ImageView fitHeight="200.0" fitWidth="200.0" layoutY="25.0">
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutY="58.0">
         <Image url="@../../../images/logo.jpg" />
       </ImageView>
-      <ImageView fx:id="userPicture" fitHeight="120.0" fitWidth="120.0" layoutX="37.0" layoutY="298.0" pickOnBounds="true" />
-         <Label fx:id="noFIle" layoutX="5.0" layoutY="335.0" prefHeight="17.0" prefWidth="132.0" style="-fx-text-fill: white;" />
-         <Button fx:id="delImage" layoutX="34.0" layoutY="294.0" mnemonicParsing="false" onAction="#delimageCross" style="-fx-background-color: white; -fx-text-fill: red;" text="X">
+      <ImageView fx:id="userPicture" fitHeight="120.0" fitWidth="120.0" layoutX="40.0" layoutY="340.0" pickOnBounds="true" />
+         <Label fx:id="noFIle" alignment="CENTER" layoutX="34.0" layoutY="391.0" prefHeight="17.0" prefWidth="132.0" style="-fx-text-fill: white;" />
+         <Button fx:id="delImage" layoutX="32.0" layoutY="332.0" mnemonicParsing="false" onAction="#delimageCross" style="-fx-background-color: white; -fx-text-fill: black; -fx-background-radius: 50%;" text="X">
             <font>
-               <Font size="11.0" />
+               <Font size="8.0" />
             </font>
          </Button>
     </AnchorPane>

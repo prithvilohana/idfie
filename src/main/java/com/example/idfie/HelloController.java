@@ -1,8 +1,8 @@
 package com.example.idfie;
 
 import com.google.zxing.WriterException;
-import com.mongodb.client.*;
 import javafx.event.ActionEvent;
+import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -11,13 +11,19 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+
 import java.io.File;
 import java.io.IOException;
+import java.util.regex.Pattern;
+
 import javafx.scene.image.ImageView;
-import org.bson.Document;
 
 public class HelloController {
 
@@ -36,10 +42,47 @@ public class HelloController {
     @FXML
     public Button delImage;
 
+    String emailText = null;
+    @FXML
+    private Text invalidEmail;
+
+
+
+    @FXML
+    public void checkEmail(javafx.scene.input.KeyEvent keyEvent) {
+
+        emailText = email.getText();
+        if(!isValid(emailText)){
+//
+            invalidEmail.setVisible(true);
+        }else{
+//
+            invalidEmail.setVisible(false);
+        }
+    }
+    private boolean isValid(String emailText){
+        String emailRegex = "^[a-zA-z0-9_+&*-]+(?:\\."+
+                            "[a-zA-Z0-9_+&*-]+)*@" +
+                            "(?:[a-zA-z0-9-]+\\.)+[a-z"+
+                            "A=z]{2,7}$";
+        Pattern pat = Pattern.compile(emailRegex);
+        if(email == null){
+            return false;
+        }
+        return pat.matcher(emailText).matches();
+    }
+
+
     User user  = new User();
 
     public void initialize() {
         delImage.setVisible(false);
+        invalidEmail.setVisible(false);
+        phone.addEventFilter(KeyEvent.KEY_TYPED, event -> {
+            if (!event.getCharacter().matches("\\d")) {
+                event.consume();
+            }
+        });
     }
     @FXML
     public void uploadBtnClick(ActionEvent event) {
@@ -67,9 +110,15 @@ public class HelloController {
         userPicture.setImage(null);
         delImage.setVisible(false);
     }
+    public void delimageCross1(MouseEvent mouseEvent) {
+        userPicture.setImage(null);
+        delImage.setVisible(false);
+    }
 
     private Parent root;
     public void generateID(ActionEvent event) throws IOException, WriterException {
+
+
         user.idNo = id.getText();
         user.firstName = firstName.getText();
         user.fatherName = fatherName.getText();
@@ -145,5 +194,7 @@ public class HelloController {
 
         }
     }
+
+
 
 }

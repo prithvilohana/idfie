@@ -11,6 +11,9 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.embed.swing.SwingFXUtils;
 import javax.imageio.ImageIO;
@@ -27,6 +30,7 @@ import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 
 
 public class IDCardController {
@@ -42,15 +46,26 @@ public class IDCardController {
     @FXML
     private ImageView qrCodeImage;
 
+    InputStream fontFile = IDCardController.class.getResourceAsStream("Poppins-SemiBold.ttf");
+    Font nameFont = Font.font("Poppins", FontWeight.BOLD, FontPosture.REGULAR, 30);
+    Font regFont = Font.font("Poppins", FontWeight.BOLD, FontPosture.REGULAR, 15);
     public void setIdInfo(Image image, String name, String fName, String idNum, String batch, String campus, String dept, String email, String phone, String qrCodeFilePath){
         idCardName.setText(name);
+        idCardName.setFont(nameFont);
         idFName.setText(fName);
+        idFName.setFont(regFont);
         idNumber.setText(idNum);
+        idNumber.setFont(regFont);
         idBatch.setText(batch);
+        idBatch.setFont(regFont);
         idCampus.setText(campus);
+        idCampus.setFont(regFont);
         idDept.setText(dept);
+        idDept.setFont(regFont);
         idEmail.setText(email);
+        idEmail.setFont(regFont);
         idPhone.setText(phone);
+        idPhone.setFont(regFont);
         profimageSc2.setImage(image);
         File qrFile = new File(qrCodeFilePath);
         Image qrCode = new Image(qrFile.toURI().toString());
@@ -84,7 +99,6 @@ public class IDCardController {
 
     @FXML
     void onDownload(ActionEvent event) {
-
         // Get the bounds of the card panes
         Bounds bounds = card.getBoundsInLocal();
         Bounds bounds1 = card1.getBoundsInLocal();
