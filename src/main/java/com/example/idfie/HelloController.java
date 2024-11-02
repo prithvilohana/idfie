@@ -21,6 +21,9 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.regex.Pattern;
 
 import javafx.scene.image.ImageView;
@@ -34,7 +37,7 @@ public class HelloController {
     public Button IdGenerator;
 
     @FXML
-    private Label noFIle;
+    private Label noFIle, expDate, currDate;
 
     @FXML
     private ImageView userPicture;
@@ -83,6 +86,7 @@ public class HelloController {
                 event.consume();
             }
         });
+
     }
     @FXML
     public void uploadBtnClick(ActionEvent event) {
@@ -156,6 +160,7 @@ public class HelloController {
             root = loader.load();
             IDCardController idCardController = loader.getController();
             idCardController.setIdInfo(userPicture.getImage(), user.firstName, user.fatherName, user.idNo, user.batchNo, user.campus, user.department, user.emailAddress, user.phoneNumber, qrFilePath);
+
 
 
 

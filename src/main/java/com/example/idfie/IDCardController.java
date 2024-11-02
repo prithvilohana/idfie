@@ -31,6 +31,7 @@ import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.time.LocalDate;
 
 
 public class IDCardController {
@@ -95,8 +96,16 @@ public class IDCardController {
 
     @FXML
     private Pane card1;
+    @FXML
+    private Label expDate, currDate;
+    public void initialize(){
 
+        LocalDate issueDate = LocalDate.now();
+        currDate.setText(issueDate.toString());
 
+        LocalDate expiryDate = issueDate.plusYears(2);
+        expDate.setText(expiryDate.toString());
+    }
     @FXML
     void onDownload(ActionEvent event) {
         // Get the bounds of the card panes
